@@ -9916,7 +9916,7 @@ nav.qui-navshow .qui-menu-link .card-body ul li a::before {
   align-content: center;
   align-items: center;
   flex-wrap: wrap;
-  height: 100vh;
+  min-height: 250px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 .qui-content .qui-home-item span {
@@ -9936,7 +9936,7 @@ nav.qui-navshow .qui-menu-link .card-body ul li a::before {
   border-radius: 5px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
-  height: 75vh;
+  height: 100%;
 }
 .qui-content .qui-home-inter .qui-titleh5 {
   margin: 0;
@@ -9953,6 +9953,9 @@ nav.qui-navshow .qui-menu-link .card-body ul li a::before {
 .qui-content .qui-home-inter .qui-item h6 {
   font-weight: 700;
   font-size: 0.8em;
+}
+.qui-content .qui-home-inter2 {
+  height: 100%;
 }
 
 .qui-wrapper {
