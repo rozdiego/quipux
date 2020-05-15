@@ -9729,12 +9729,16 @@ nav {
   text-align: center;
   display: block;
 }
+nav .qui-menu {
+  padding: 10px;
+}
 nav .qui-menu a, nav .qui-menu-link a {
   display: flex;
   align-items: center;
   align-content: center;
   text-decoration: none;
   justify-content: space-between;
+  color: #f9f9f9;
 }
 nav .qui-menu a span, nav .qui-menu-link a span {
   font-size: 2em;
@@ -9752,7 +9756,7 @@ nav .qui-menu-link span {
 nav .qui-menu-link .card {
   background-color: transparent;
   border: none;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 nav .qui-menu-link .card .card-header {
   padding: 0px;
@@ -9760,46 +9764,94 @@ nav .qui-menu-link .card .card-header {
   border: none;
   background-color: transparent;
 }
-nav .qui-menu-link .card .card-header button span {
+nav .qui-menu-link .card .card-header h2 button {
+  display: flex;
+  color: #f9f9f9;
+  padding: 20px 0;
+  text-decoration: none;
+  justify-content: center;
+}
+nav .qui-menu-link .card .card-header h2 button h6 {
+  display: none;
+}
+nav .qui-menu-link .card .card-header h2 button span {
   font-size: 1.6em;
+}
+nav .qui-menu-link .card .card-body {
+  display: none;
 }
 
 nav.qui-navshow .qui-menu img {
   display: block;
   width: 60%;
 }
-nav.qui-navshow .qui-menu-link h2 {
+nav.qui-navshow .qui-menu-link .card-header h2 {
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: space-between;
   border: none;
 }
-nav.qui-navshow .qui-menu-link h2 button {
-  color: #f9f9f9;
-  font-weight: 400;
+nav.qui-navshow .qui-menu-link .card-header button {
   display: flex;
   align-items: center;
   align-content: center;
   font-size: 0.4em;
   text-decoration: none;
   border: none;
-  justify-content: space-between;
+  justify-content: space-around !important;
+  background-color: #272930;
 }
-nav.qui-navshow .qui-menu-link h2 button::after {
+nav.qui-navshow .qui-menu-link .card-header button h6 {
+  font-size: 1em;
+  color: #53e6af;
+  font-weight: 400;
+  display: block !important;
+}
+nav.qui-navshow .qui-menu-link .card-header button::after {
   content: "";
   background-image: url(../images/down.png);
   background-size: cover;
   transform: rotate(-180deg);
   width: 20px;
   height: 20px;
+  margin-left: 12px;
 }
-nav.qui-navshow .qui-menu-link h2 button i {
-  margin-right: 10px;
+nav.qui-navshow .qui-menu-link .card-header button.collapsed {
+  background-color: transparent;
 }
-nav.qui-navshow .qui-menu-link h2 button.collapsed::after {
+nav.qui-navshow .qui-menu-link .card-header button.collapsed::after {
   background-image: url(../images/down.png);
   transform: rotate(0deg);
+}
+nav.qui-navshow .qui-menu-link .card-header button.collapsed h6 {
+  color: #f9f9f9;
+}
+nav.qui-navshow .qui-menu-link .card-body {
+  background-color: #272930;
+  padding: 15px 10px;
+  display: block;
+}
+nav.qui-navshow .qui-menu-link .card-body ul {
+  padding: 0;
+  margin: 0;
+}
+nav.qui-navshow .qui-menu-link .card-body ul li {
+  margin: 10px 0px 10px 10px;
+}
+nav.qui-navshow .qui-menu-link .card-body ul li a {
+  font-size: 0.8em;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: start;
+}
+nav.qui-navshow .qui-menu-link .card-body ul li a::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #f9f9f9;
+  margin-right: 10px;
 }
 
 .qui-topheader {
@@ -9904,6 +9956,7 @@ nav.qui-navshow .qui-menu-link h2 button.collapsed::after {
 }
 .qui-wrapper nav.qui-navshow {
   width: 200px;
+  padding: 0;
 }
 .qui-wrapper .qui-topheader {
   -ms-grid-row: 1;
