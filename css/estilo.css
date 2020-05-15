@@ -9717,11 +9717,11 @@ table {
 }
 
 a {
-  color: #0079c8;
+  color: #75787B;
   text-decoration: underline;
 }
 a:hover {
-  color: #0079c8;
+  color: #75787B;
 }
 
 .qui-btn {
@@ -9732,7 +9732,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: #333333;
+  background-color: #75787B;
   padding: 10px;
   border-radius: 5px;
   margin: 10px 0;
@@ -9746,20 +9746,20 @@ a:hover {
 }
 
 .qui-btnprimary {
-  background-color: #0079c8;
+  background-color: #75787B;
   color: #f9f9f9;
 }
 
 .qui-btnsecondary {
   background-color: transparent;
-  border: 2px solid #0079c8;
-  color: #0079c8;
+  border: 2px solid #75787B;
+  color: #75787B;
 }
 
 p {
   font-size: 16px;
   font-weight: 400;
-  color: #333333;
+  color: #75787B;
 }
 p .bold {
   font-weight: 700;
