@@ -9716,49 +9716,90 @@ table {
   border-spacing: 0;
 }
 
-a {
-  color: #75787B;
+.btn-link {
   text-decoration: underline;
-}
-a:hover {
-  color: #75787B;
-}
-
-.qui-btn {
-  text-decoration: none;
-  font-size: 11px;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  background-color: #75787B;
-  padding: 10px;
-  border-radius: 5px;
-  margin: 10px 0;
-  font-weight: 700;
-  border: none;
-  height: 46px;
-  font-weight: 700;
-}
-.qui-btn i {
-  margin: 0 10px;
-}
-
-.qui-btnprimary {
-  background-color: #75787B;
-  color: #f9f9f9;
-}
-
-.qui-btnsecondary {
-  background-color: transparent;
-  border: 2px solid #75787B;
-  color: #75787B;
 }
 
 .qui-titleh5 {
   font-weight: 300;
   font-size: 1em;
+}
+
+nav {
+  text-align: center;
+  display: block;
+}
+nav .qui-menu a, nav .qui-menu-link a {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-decoration: none;
+  justify-content: space-between;
+}
+nav .qui-menu a span, nav .qui-menu-link a span {
+  font-size: 2em;
+  cursor: pointer;
+  color: #f9f9f9;
+  text-align: center;
+}
+nav .qui-menu a img, nav .qui-menu-link a img {
+  display: none;
+}
+nav .qui-menu-link span {
+  font-size: 1.5em;
+  color: #f9f9f9;
+}
+nav .qui-menu-link .card {
+  background-color: transparent;
+  border: none;
+  margin-top: 15px;
+}
+nav .qui-menu-link .card .card-header {
+  padding: 0px;
+  box-shadow: none;
+  border: none;
+  background-color: transparent;
+}
+nav .qui-menu-link .card .card-header button span {
+  font-size: 1.6em;
+}
+
+nav.qui-navshow .qui-menu img {
+  display: block;
+  width: 60%;
+}
+nav.qui-navshow .qui-menu-link h2 {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  border: none;
+}
+nav.qui-navshow .qui-menu-link h2 button {
+  color: #f9f9f9;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  font-size: 0.4em;
+  text-decoration: none;
+  border: none;
+  justify-content: space-between;
+}
+nav.qui-navshow .qui-menu-link h2 button::after {
+  content: "";
+  background-image: url(../images/down.png);
+  background-size: cover;
+  transform: rotate(-180deg);
+  width: 20px;
+  height: 20px;
+}
+nav.qui-navshow .qui-menu-link h2 button i {
+  margin-right: 10px;
+}
+nav.qui-navshow .qui-menu-link h2 button.collapsed::after {
+  background-image: url(../images/down.png);
+  transform: rotate(0deg);
 }
 
 .qui-topheader {
@@ -9829,6 +9870,9 @@ a:hover {
 .qui-content .qui-home-item span {
   font-size: 2.5em;
   color: #34aee4;
+  display: block;
+  width: 100%;
+  text-align: center;
 }
 .qui-content .qui-home-item .qui-titleh5 {
   margin: 15px 0;
@@ -9842,7 +9886,7 @@ a:hover {
   flex-wrap: wrap;
   display: grid;
   grid-gap: 0px;
-  grid-template-columns: 100px 1fr;
+  grid-template-columns: 60px 1fr;
   grid-template-areas: "nav  topheader" "nav content" "nav footer";
 }
 .qui-wrapper nav {
@@ -9854,9 +9898,12 @@ a:hover {
   position: fixed;
   top: 0;
   bottom: 0;
-  width: 120px;
+  width: 70px;
   padding: 10px;
   z-index: 3;
+}
+.qui-wrapper nav.qui-navshow {
+  width: 200px;
 }
 .qui-wrapper .qui-topheader {
   -ms-grid-row: 1;
@@ -9868,7 +9915,7 @@ a:hover {
   position: fixed;
   top: 0;
   right: 0;
-  left: 120px;
+  left: 70px;
   display: flex;
   align-items: center;
   align-content: center;
@@ -9883,7 +9930,7 @@ a:hover {
   height: 100%;
   position: fixed;
   top: 80px;
-  left: 120px;
+  left: 70px;
   right: 0px;
   padding: 20px;
 }
@@ -9896,9 +9943,16 @@ a:hover {
   position: fixed;
   bottom: 0;
   right: 0;
-  left: 120px;
+  left: 70px;
   border-top: 1px solid rgba(47, 50, 62, 0.2);
   padding: 20px;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+.qui-wrapper footer img {
+  text-align: center;
+  width: 8%;
 }
 
 body {

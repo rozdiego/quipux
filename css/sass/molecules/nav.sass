@@ -1,0 +1,82 @@
+nav
+    text-align: center
+    display: block
+
+    .qui-menu, .qui-menu-link
+
+        a
+            display: flex
+            align-items: center
+            align-content: center
+            text-decoration: none
+            justify-content: space-between
+
+            span
+                font-size: 2em
+                cursor: pointer
+                color: $white
+                text-align: center
+
+            img
+                display: none
+
+    .qui-menu-link
+        span
+            font-size: 1.5em
+            color: $white
+
+        .card
+            background-color: transparent
+            border: none
+            margin-top: 15px
+
+            .card-header
+                padding: 0px
+                box-shadow: none
+                border: none
+                background-color: transparent
+
+                button
+                    span
+                        font-size: 1.6em
+
+nav.qui-navshow
+    .qui-menu
+        img
+            display: block
+            width: 60%
+
+    .qui-menu-link
+        h2
+            display: flex
+            align-items: center
+            align-content: center
+            justify-content: space-between
+            border: none
+
+            button
+                color: $white
+                font-weight: 400
+                display: flex
+                align-items: center
+                align-content: center
+                font-size: .4em
+                text-decoration: none
+                border: none
+                justify-content: space-between
+
+                &::after
+                    content: ""
+                    background-image: url(../images/down.png)
+                    background-size: cover
+                    transform: rotate(-180deg)
+                    width: 20px
+                    height: 20px
+
+                i
+                    margin-right: 10px
+
+            button.collapsed
+                &::after
+                    background-image: url(../images/down.png)
+                    transform: rotate(0deg)

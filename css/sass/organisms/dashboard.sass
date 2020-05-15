@@ -5,7 +5,7 @@
     flex-wrap: wrap
     display: grid
     grid-gap: 0px
-    grid-template-columns: 100px 1fr
+    grid-template-columns: 60px 1fr
     grid-template-areas: "nav  topheader" "nav content" "nav footer"
 
     nav
@@ -14,9 +14,12 @@
         position: fixed
         top: 0
         bottom: 0
-        width: $w120
+        width: 70px
         padding: 10px
         z-index: 3
+
+    nav.qui-navshow
+        width: 200px
 
     .qui-topheader
         grid-area: topheader
@@ -26,7 +29,7 @@
         position: fixed
         top: 0
         right: 0
-        left: $w120
+        left: 70px
         display: flex
         align-items: center
         align-content: center
@@ -39,7 +42,7 @@
         height: 100%
         position: fixed
         top: 80px
-        left: $w120
+        left: 70px
         right: 0px
         padding: 20px
 
@@ -50,6 +53,13 @@
         position: fixed
         bottom: 0
         right: 0
-        left: $w120
+        left: 70px
         border-top: 1px solid rgba($blue_dark , .2)
         padding: 20px
+        justify-content: center
+        margin: auto
+        text-align: center
+
+        img
+            text-align: center
+            width: 8%

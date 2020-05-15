@@ -7,12 +7,72 @@
     <title>Prueba Diseñador Front End - Quipux</title>
     <link rel="shortcut icon" href="favicon.png">
     <link rel="stylesheet" href="css/estilo.css">
+
 </head>
 
 <body>
 
     <section class="qui-wrapper">
-        <nav>Prueba NAV</nav>
+        <nav id="nav" class="qui-navshow">
+
+            <div class="qui-menu">
+                <a href="" id="qui-menubtn">
+                    <span class="material-icons">
+                        notes
+                    </span>
+                    <img src="images/Logo.png" alt="">
+                </a>
+            </div>
+            <div class="qui-menu-link mt-5">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                    aria-controls="collapseOne">
+                                    <i class="material-icons">
+                                        work_outline
+                                    </i>
+                                    Empresas
+                                </button>
+
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    <i class="material-icons">
+                                        library_books
+                                    </i>
+                                    Articulos
+                                </button>
+
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit
+                                VHS.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
         <article class="qui-topheader">
             <div aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -71,6 +131,7 @@
                                 </h5>
                             </div>
                         </div>
+
                         <div class="col-md-4">
                             <div class="qui-home-item">
                                 <span class="material-icons">
@@ -81,16 +142,15 @@
                                 </h5>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
             </div>
         </article>
         <footer class="">
-            <div class="row">
-                <div class="col-md-2 offset-md-5">
-                    <img class="img-fluid" src="images/Logobn.png" alt="">
-                </div>
-            </div>
+
+            <img src="images/Logobn.png" alt="">
 
         </footer>
     </section>
@@ -99,6 +159,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
