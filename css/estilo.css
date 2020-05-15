@@ -9916,7 +9916,7 @@ nav.qui-navshow .qui-menu-link .card-body ul li a::before {
   align-content: center;
   align-items: center;
   flex-wrap: wrap;
-  min-height: 200px;
+  height: 100vh;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 .qui-content .qui-home-item span {
@@ -9929,6 +9929,30 @@ nav.qui-navshow .qui-menu-link .card-body ul li a::before {
 .qui-content .qui-home-item .qui-titleh5 {
   margin: 15px 0;
   text-align: center;
+}
+.qui-content .qui-home-inter {
+  background-color: #f9f9f9;
+  padding: 30px 15px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 75vh;
+}
+.qui-content .qui-home-inter .qui-titleh5 {
+  margin: 0;
+  text-align: left;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+.qui-content .qui-home-inter .qui-item {
+  margin: 0px 0;
+}
+.qui-content .qui-home-inter .qui-item p {
+  font-size: 0.8em;
+}
+.qui-content .qui-home-inter .qui-item h6 {
+  font-weight: 700;
+  font-size: 0.8em;
 }
 
 .qui-wrapper {
@@ -9957,6 +9981,7 @@ nav.qui-navshow .qui-menu-link .card-body ul li a::before {
 .qui-wrapper nav.qui-navshow {
   width: 200px;
   padding: 0;
+  transition: 1s;
 }
 .qui-wrapper .qui-topheader {
   -ms-grid-row: 1;
@@ -9997,7 +10022,6 @@ nav.qui-navshow .qui-menu-link .card-body ul li a::before {
   bottom: 0;
   right: 0;
   left: 70px;
-  border-top: 1px solid rgba(47, 50, 62, 0.2);
   padding: 20px;
   justify-content: center;
   margin: auto;
