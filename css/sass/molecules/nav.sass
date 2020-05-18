@@ -1,29 +1,137 @@
-nav
-    text-align: center
+.qui-nav
     display: block
+    width: max-content
+    align-content: center
+    align-items: center
+
+    img
+        display: none
+
+    #menutab
+        display: none
+
+        &:checked
+            & ~ .qui-menu
+                width: 260px
+
+            & ~ .logoimg
+                display: inline-block
+                position: relative
+                z-index: 5
+                width: 50%
+                margin-left: 42px
+                margin-top: 20px
+            & ~ label
+                margin: 0 5px
+                top: -7px
+                left: 5px
+
+            & ~ .qui-menu
+                .card
+                    background-color: transparent
+                    border: none
+                    margin-top: 30px
+
+                    .card-header
+                        padding: 0px
+                        box-shadow: none
+                        border: none
+                        background-color: transparent
+
+                        h2
+                            display: flex
+                            align-items: center
+                            align-content: center
+                            justify-content: space-between
+                            border: none
+
+                        button
+
+                            display: flex
+                            align-items: center
+                            align-content: center
+                            font-size: .4em
+                            text-decoration: none
+                            border: none
+                            justify-content: space-around !important
+                            background-color: #272930
+                            h6
+                                font-size: 1em
+                                color: $green
+                                font-weight: 400
+                                display: block !important
+
+                            &::after
+                                content: ""
+                                background-image: url(../images/down.png)
+                                background-size: cover
+                                transform: rotate(-180deg)
+                                width: 20px
+                                height: 20px
+                                margin-left: 12px
+
+                        button.collapsed
+                            background-color: transparent
+                            &::after
+                                background-image: url(../images/down.png)
+                                transform: rotate(0deg)
+
+                            h6
+                                color: $white
+
+                    .card-body
+                        background-color: #272930
+                        padding: 15px 10px
+                        display: block
+
+                        ul
+                            padding: 0
+                            margin: 0
+
+                            li
+                                margin: 10px 0px 10px 10px
+                                a
+                                    font-size: .8em
+                                    display: flex
+                                    align-content: center
+                                    align-items: center
+                                    justify-content: start
+                                    color: $white
+
+                                    &::before
+                                        content: ""
+                                        width: 20px
+                                        height: 2px
+                                        background: $white
+                                        margin-right: 10px
+
+    label
+        cursor: pointer
+        background-image: url(../images/menu.png)
+        background-size: 40px
+        background-repeat: no-repeat
+        width: 30px
+        height: 30px
+        margin: auto
+        text-align: center
+        position: relative
+        top: 10px
+        left: 5px
+        z-index: 5
+        display: inline-block
 
     .qui-menu
         padding: 10px
-
-    .qui-menu, .qui-menu-link
-
-        a
-            display: flex
-            align-items: center
-            align-content: center
-            text-decoration: none
-            justify-content: space-between
-            color: $white
-            span
-                font-size: 2em
-                cursor: pointer
-                color: $white
-                text-align: center
-
-            img
-                display: none
+        position: fixed
+        top: 0
+        bottom: 0
+        width: 70px
+        padding: 10px
+        z-index: 3
+        background-color: $blue_dark
 
     .qui-menu-link
+        margin-top: 100px
         span
             font-size: 1.5em
             color: $white
@@ -46,6 +154,7 @@ nav
                         padding: 20px 0
                         text-decoration: none
                         justify-content: center
+                        border: none
                         h6
                             display: none
                         span
@@ -53,79 +162,3 @@ nav
 
             .card-body
                 display: none
-
-nav.qui-navshow
-    .qui-menu
-        img
-            display: block
-            width: 60%
-
-    .qui-menu-link
-
-        .card-header
-            h2
-                display: flex
-                align-items: center
-                align-content: center
-                justify-content: space-between
-                border: none
-
-            button
-
-                display: flex
-                align-items: center
-                align-content: center
-                font-size: .4em
-                text-decoration: none
-                border: none
-                justify-content: space-around !important
-                background-color: #272930
-
-                h6
-                    font-size: 1em
-                    color: $green
-                    font-weight: 400
-                    display: block !important
-
-                &::after
-                    content: ""
-                    background-image: url(../images/down.png)
-                    background-size: cover
-                    transform: rotate(-180deg)
-                    width: 20px
-                    height: 20px
-                    margin-left: 12px
-
-            button.collapsed
-                background-color: transparent
-                &::after
-                    background-image: url(../images/down.png)
-                    transform: rotate(0deg)
-
-                h6
-                    color: $white
-
-        .card-body
-            background-color: #272930
-            padding: 15px 10px
-            display: block
-
-            ul
-                padding: 0
-                margin: 0
-
-                li
-                    margin: 10px 0px 10px 10px
-                    a
-                        font-size: .8em
-                        display: flex
-                        align-content: center
-                        align-items: center
-                        justify-content: start
-
-                        &::before
-                            content: ""
-                            width: 20px
-                            height: 2px
-                            background: $white
-                            margin-right: 10px
